@@ -52,9 +52,10 @@ const WHATSAPP_BOOKING_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
     <section className="home">
         <div className="h-1-wrapper">
             <small>UNLEASH YOUR GAMING POWER</small>
-            <h1>YOUR GAME<span className="dot"></span> <br />
-            YOUR WORLD<span className="dot"></span><br />
-            YOUR ZONE<span className="dot"></span>
+            <h1>
+                <span>Lights down<span className="dot"></span></span>
+                 <br />
+            <span>Game on<span className="dot"></span></span>
             </h1>
             <p className='description'>Explore PlayStation consoles, rent your favourite games, discover exclusive deals, and unlock special discounts with Membership. Your next gaming adventure starts here.</p>
             <div className="home-cta">

@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 
 :root {
   /* Backgrounds */
-  --gz-void:       #07013F;  /* page background */
-  --gz-midnight:   #0A004F;  /* alternate sections */
+  --gz-void:       #06061C;  /* page background */
+  --gz-midnight:   #0C0D38;  /* alternate sections */
   --gz-indigo:     #15016C;  /* cards, navbar */
-  --gz-edge:       #241278;  /* borders, dividers */
+  --gz-edge:       #2B35B8;  /* borders, dividers */
 
   /* Brand blues */
   --gz-royal:      #1E00A8;  /* hover/active fills */
@@ -13,21 +15,30 @@
   --gz-led:        #A0B9F0;  /* links, glow, focus rings */
 
   /* Accents */
-  --gz-magenta:    #C026D3;  /* secondary highlights, tags */
+  --gz-magenta:    #E8B877;  /* secondary highlights, tags */
   --gz-gold:       #F2C14E;  /* "Launch day", offers, price badges */
 
   /* Text */
-  --gz-text:       #EEF0FF;  /* headings, body */
-  --gz-text-muted: #9A9CC8;  /* captions, meta ("Open daily · 10AM–10PM") */
+  --gz-text:       #E4EAFF;  /* headings, body */
+  --gz-text-muted: #8E9ACB;
+  --gz-text-accent: #7C93FF;
+  /* captions, meta ("Open daily · 10AM–10PM") */
 
   /* Signature LED glow */
   --gz-glow: 0 0 12px rgba(160, 185, 240, 0.6), 0 0 32px rgba(45, 59, 255, 0.45);
+
+  /* font */
+
+  --bg-fw400:400;
+  --bg-fw600:600;
+  --bg-fw800:800;
+  --jb-font:"JetBrains Mono";
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color:var(--gz-text);
-  font-family: 'Montserrat', sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+  font-family: 'Bricolage Grotesque', sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
     -webkit-tap-highlight-color: transparent;
 }
