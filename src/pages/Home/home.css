@@ -25,9 +25,10 @@ section.home>.h-1-wrapper>small,
     text-transform: uppercase;
     font-size: 13px;
     padding-left: 10px;
+    letter-spacing: 0.08em;
     position: relative;
     color: var(--gz-text-muted);
-    font-family: var(--jb-font);
+    font-family: var(--jb-font), monospace;
 
 }
 
@@ -53,10 +54,10 @@ section.home>.h-1-wrapper>small::before,
 section.home>.h-1-wrapper h1 {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 120px;
-    font-weight: 900;
+    font-size: 168px;
+    font-weight: 800;
     text-transform: capitalize;
-    line-height: .8;
+    line-height: .86;
 }
 section.home>.h-1-wrapper h1 span:last-child{
     color: var(--gz-text-accent);
@@ -79,6 +80,7 @@ section.home>.h-1-wrapper .description {
     max-width: 60%;
     margin-bottom: 30px;
     line-height: 1.5;
+    color: var(--gz-text-1);
 }
 
 section.home>.h-1-wrapper .home-cta {
@@ -90,13 +92,20 @@ section.home>.h-1-wrapper .home-cta {
 section.home>.h-1-wrapper .home-cta a {
     border: none;
     padding: 10px 16px;
-    border-radius: 4px;
-    border: 1px solid var(--gz-gold);
+    border-radius: 20px;
+    border: 1.5px solid transparent;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: var(--gz-void);
+    background-color: var(--gz-text-accent);
     text-decoration: none;
+    color: #06061c;
+    font-weight: 600;
+}
+section.home>.h-1-wrapper .home-cta a:last-child{
+    border-color: var(--gz-text);
+    color: var(--gz-text);
+    background-color: transparent;
 }
 
 section.home>.h-1-wrapper .badges {
@@ -293,7 +302,7 @@ section.home>.showcase>.wrapper span .dot {
     border: none;
     padding: 10px 16px;
     border-radius: 4px;
-    border: 1px solid var(--gz-gold);
+    border: 1.5px solid var(--gz-text);
     text-transform: uppercase;
     font-weight: 600;
     display: flex;
@@ -302,6 +311,14 @@ section.home>.showcase>.wrapper span .dot {
     background-color: var(--gz-void);
     cursor: pointer;
     text-decoration: none;
+    border-radius: 20px;
+}
+
+.h-3-wrapper .cta a:first-child,
+.h-5-wrapper .cta a:first-child{
+    background-color: var(--gz-text-accent);
+    color: #06061c;
+    border-color: transparent;
 }
 
 .h-5-wrapper {
@@ -322,7 +339,7 @@ section.home>.showcase>.wrapper span .dot {
 }
 
 .h-5-wrapper .box h2 span {
-    color: var(--gz-gold);
+    color: var(--gz-text-accent);
 }
 
 .h-5-wrapper .box p {
