@@ -21,7 +21,8 @@ section.home>.h-1-wrapper>small,
 .h-2-wrapper>small,
 .h-3-wrapper>small,
 .h-4-wrapper>small,
-.h-5-wrapper>.box small {
+.h-5-wrapper>.box small,
+.h-6-pick > small {
     text-transform: uppercase;
     font-size: 13px;
     padding-left: 10px;
@@ -36,7 +37,8 @@ section.home>.h-1-wrapper>small::before,
 .h-2-wrapper>small::before,
 .h-3-wrapper>small::before,
 .h-4-wrapper>small::before,
-.h-5-wrapper>.box small::before {
+.h-5-wrapper>.box small::before,
+.h-6-pick > small::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -54,10 +56,10 @@ section.home>.h-1-wrapper>small::before,
 section.home>.h-1-wrapper h1 {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 168px;
-    font-weight: 800;
-    text-transform: capitalize;
-    line-height: .86;
+    font-size: clamp(60px, 12vw, 168px);
+    line-height: 0.86;
+    letter-spacing: -0.05em;
+    text-transform: capitalize
 }
 section.home>.h-1-wrapper h1 span:last-child{
     color: var(--gz-text-accent);
@@ -67,6 +69,7 @@ section.home>.h-1-wrapper h1 span .dot {
     display: inline-block;
     height: 12px;
     width: 12px;
+    margin-left: 4px;
 background-color: var(--gz-text);
 
     
@@ -113,6 +116,7 @@ section.home>.h-1-wrapper .badges {
     align-items: center;
     gap: 15px;
     margin-top: 30px;
+    text-transform: uppercase;
 }
 
 section.home>.h-1-wrapper .badges span {
@@ -179,7 +183,8 @@ section.home>.showcase>.wrapper span .dot {
 .h-2-wrapper,
 .h-3-wrapper,
 .h-4-wrapper,
-.h-5-wrapper {
+.h-5-wrapper,
+.h-6-pick , .shop-img{
 
     max-width: 1200px;
     width: 100%;
@@ -191,8 +196,12 @@ section.home>.showcase>.wrapper span .dot {
 .h-2-wrapper h2,
 .h-3-wrapper h2,
 .h-4-wrapper h2,
-.h-5-wrapper h2 {
-    font-size: 36px;
+.h-5-wrapper h2,
+.h-6-pick > h2 {
+    font-size: clamp(40px, 6vw, 72px);
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    font-weight: 800;
     margin-bottom: 30px;
     margin-top: 20px;
 }
@@ -267,7 +276,7 @@ section.home>.showcase>.wrapper span .dot {
 }
 
 .h-3-wrapper>.price-cards>.price-card small {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--gz-text-muted);
 }
 
@@ -355,7 +364,117 @@ section.home>.showcase>.wrapper span .dot {
     gap: 30px;
 }
 
+
+.console-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.console-cards>.c-card{
+    width: calc(100% / 2 - 15px);
+    height: 323px;
+    padding: 30px;
+    border: 1.5px solid var(--gz-edge);
+    background-color: var(--gz-midnight);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+/* .console-cards>.c-card.active{
+    background-color: var(--gz-gold);
+    border-color: transparent;
+} */
+
+.console-cards>.c-card>img{
+    height: 300px;
+    max-width: 200px;
+    object-fit: contain;
+    /* padding: 10px; */
+}
+.console-cards>.c-card.ps-5>img{
+    transform: scale(1.5);
+}
+.console-cards>.c-card.pxn>img{
+    transform: scale(1.5);
+}
+.console-cards>.c-card>.console-details{
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: space-between; */
+    margin-top: 10px;
+}
+.console-cards>.c-card>.console-details> .price{
+    color: var(--gz-text-muted); font-size: 14px; text-align: center;
+}
+.console-cards>.c-card>.console-details>.details span{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    color: rgb(228, 234, 255);
+   
+}
+.console-cards>.c-card>.console-details>.details h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.shop-img{
+    
+    overflow: hidden;
+}
+.shop-img .img-wrapper{
+    border: 2px solid rgb(124, 147, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.shop-img img{
+    width: 100%;
+}
+.shop-img .img-wrapper span{
+    position: absolute;
+    
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 9px 14px;
+    border-radius: 20px;
+    color: #06061c;
+    background-color: var(--gz-gold);
+}
+.shop-img .img-wrapper span.s1{
+    top: 10%;
+    left: 38%;
+}
+
+.shop-img .img-wrapper span.s2{
+       top: 80%;
+    left: 45%;
+}
+.shop-img .img-wrapper span.s3{
+        top: 31%;
+    left: 2%;
+}
+.shop-img .img-wrapper span.s3{
+        top: 58%;
+    left: 60%;
+}
 @media (max-width:768px) {
+    .console-cards>.c-card{
+        width: 100%;
+}
     section.home>.h-1-wrapper .badges {
         flex-wrap: wrap;
     }
@@ -378,7 +497,7 @@ section.home>.showcase>.wrapper span .dot {
     section.home>.h-1-wrapper .badges {
         flex-wrap: wrap;
     }
- section.home>.h-1-wrapper,.h-2-wrapper, .h-3-wrapper, .h-4-wrapper, .h-5-wrapper, footer .wrapper {
+ section.home>.h-1-wrapper,.h-2-wrapper, .h-3-wrapper, .h-4-wrapper, .h-5-wrapper, footer .wrapper, .h-6-pick {
         padding-top: 50px;
     }
     .h-2-wrapper>.cards .card {
@@ -396,8 +515,8 @@ section.home>.showcase>.wrapper span .dot {
     }
 
     section.home>.h-1-wrapper h1 {
-        font-size: 30px;
-        line-height: 1.5;
+        /* font-size: 30px;
+        line-height: 1.5; */
     }
 
     section.home>.h-1-wrapper .description {
@@ -408,10 +527,6 @@ section.home>.showcase>.wrapper span .dot {
         margin-bottom: 60px;
     }
    
-    .h-2-wrapper h2, .h-3-wrapper h2, .h-4-wrapper h2, .h-5-wrapper h2{
-        font-size: 28px;
-    }
-
     .h-2-wrapper>.cards .card {
         width: 100%;
     }
@@ -422,7 +537,7 @@ section.home>.showcase>.wrapper span .dot {
     .h-3-wrapper>.price-cards>.price-card>span{
         font-size: 14px;
     }
-    .h-3-wrapper .cta button, .h-5-wrapper .cta button{
+    .h-3-wrapper .cta a, .h-5-wrapper .cta a{
         font-size: 12px;
     }
      .h-5-wrapper .cta{
@@ -431,5 +546,9 @@ section.home>.showcase>.wrapper span .dot {
        
      }
 
+     
+.console-cards>.c-card.pxn>img{
+    transform: scale(1.2);
+}
 
 }
