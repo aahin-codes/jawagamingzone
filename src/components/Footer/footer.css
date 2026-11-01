@@ -66,6 +66,7 @@ footer .wrapper .middle, footer .wrapper .right{
 }
 footer .wrapper .middle a, footer .wrapper .right a{
     text-decoration: none;
+    color: var(--gz-text);
 }
 
 footer .wrapper .middle span:first-child, footer .wrapper .right span:first-child{
