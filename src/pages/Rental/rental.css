@@ -72,41 +72,50 @@ background-color: var(--gz-text-accent);
     background-color: var(--gz-text-accent);
     color: #06061c;
 }
-.console-cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.r-1-wrapper .console-cards{
+    
     margin-top: 20px;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
 }
-.console-cards>.c-card{
-    width: 323px;
-    padding: 10px;
+.r-1-wrapper .console-cards>.c-card{
+    width: calc(100% / 3 - 20px);
+    height: 323px;
+    padding: 30px;
     border: 1.5px solid var(--gz-edge);
     background-color: var(--gz-midnight);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
-.console-cards>.c-card.active{
+.r-1-wrapper .console-cards>.c-card.active{
     background-color: var(--gz-gold);
     border-color: transparent;
 }
 
-.console-cards>.c-card>img{
-    max-height: 300px;
-    max-width: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+.r-1-wrapper .console-cards>.c-card>img{
+     height: 300px;
+    max-width: 200px;
+    object-fit: contain;
+    align-self: center;
 }
-.console-cards>.c-card>.console-details{
+.r-1-wrapper .console-cards>.c-card.ps-5>img {
+    transform: scale(1.5);
+}
+.r-1-wrapper .console-cards>.c-card>.console-details{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 10px;
 }
-.console-cards>.c-card.active>.console-details> .price{
+.r-1-wrapper .console-cards>.c-card.active>.console-details> .price{
     font-weight: 600;
 }
-.console-cards>.c-card>.console-details>.details span{
+.r-1-wrapper .console-cards>.c-card>.console-details>.details span{
     font-family: "JetBrains Mono", monospace;
     font-size: 11px;
     letter-spacing: 0.08em;
@@ -114,10 +123,10 @@ background-color: var(--gz-text-accent);
     opacity: 0.85;
     color: rgb(228, 234, 255);
 }
-.console-cards>.c-card.active>.console-details>.details span,.console-cards>.c-card.active>.console-details>.details h2,.console-cards>.c-card.active>.console-details> .price{
+.r-1-wrapper .console-cards>.c-card.active>.console-details>.details span,.r-1-wrapper .console-cards>.c-card.active>.console-details>.details h2,.r-1-wrapper .console-cards>.c-card.active>.console-details> .price{
 color: #06061c;
 }
-.console-cards>.c-card>.console-details>.details h2{
+.r-1-wrapper .console-cards>.c-card>.console-details>.details h2{
     font-size: 30px;
     letter-spacing: -0.03em;
     line-height: 1;
@@ -390,4 +399,17 @@ height: 10px;
 width: 10px;
 border: 1px solid var(--gz-edge);
 /* font-size: 10px; */
+}
+@media (max-width: 992px){
+.r-1-wrapper .console-cards{
+        justify-content: flex-start;
+    }
+   
+    .r-1-wrapper .console-cards>.c-card {
+        width: calc(100% / 2 - 15px);
+        
+    }
+}
+@media (max-width: 768px){
+    
 }

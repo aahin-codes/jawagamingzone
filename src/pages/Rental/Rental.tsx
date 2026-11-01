@@ -16,34 +16,34 @@ const Rental = () => {
 
                 <small>choose your console</small>
                 <div className="console-cards">
-                  <div className="c-card active">
-                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0221/vC7trMorHJgbImp8PCQvpI0p.png" alt="" />
+                  <div className="c-card active ps-5">
+                    <img src="console/ps5-console.webp" alt="PlayStation 5 console" />
                     <div className="console-details">
                       <div className="details">
                         <span>Sony</span>
                         <h2>PS5</h2>
                       </div>
-                      <div className="price"> 499/day</div>
+                      <div className="price">₹549/day</div>
                     </div>
                   </div>
-                  <div className="c-card">
-                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0221/vC7trMorHJgbImp8PCQvpI0p.png" alt="" />
+                  <div className="c-card ps-4">
+                    <img src="console/ps4-console.webp" alt="PlayStation 4 console" />
                     <div className="console-details">
                       <div className="details">
                         <span>Sony</span>
-                        <h2>PS5</h2>
+                        <h2>PS4</h2>
                       </div>
-                      <div className="price"> 499/day</div>
+                      <div className="price">₹449/day</div>
                     </div>
                   </div>
-                  <div className="c-card">
-                    <img src="" alt="" />
+                  <div className="c-card ps-2">
+                    <img src="console/ps2-console.webp" alt="PlayStation 2 console" />
                     <div className="console-details">
                       <div className="details">
                         <span>Sony</span>
-                        <h2>PS5</h2>
+                        <h2>PS2</h2>
                       </div>
-                      <div className="price"> 499/day</div>
+                      <div className="price">₹249/day</div>
                     </div>
                   </div>
                 </div>
@@ -124,7 +124,31 @@ const Rental = () => {
 
               </div>
               <div className="bill">
-
+                  <div className="bill-card">
+                    <span>Rental Bill Summary</span>
+                    <h2>PS5</h2>
+                    <p className="delivery-up">Delivery Sun 1 Nov</p>
+                    <p className="pick-up">Pickup Sun 4 Nov</p>
+                    <div className="bill-details">
+                      <div className="bill-row">
+                        <span>PS5 / 1 Day</span>
+                        <span>₹300</span>
+                      </div>
+                      <div className="bill-row">
+                        <span>Controllers</span>
+                        <span>2</span>
+                      </div>
+                      <div className="bill-row">
+                        <span>Games picked</span>
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div className="bill-total">
+                        <span>Total</span>
+                        <span>₹300</span>
+                      </div>
+                      <button>Pay Verify</button>
+                  </div>
               </div>
             </div>
         </div>
