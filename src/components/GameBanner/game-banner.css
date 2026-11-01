@@ -1,0 +1,156 @@
+.game-banner{
+max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 100px;
+}
+.game-banner > .gb-wrapper{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid var(--gz-gold);
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.6)) ,url('public/game-banner/gta-6.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 400px;
+}
+.game-banner > .gb-wrapper .gb-content{
+    max-width: calc(75% - 15px);
+}
+.game-banner > .gb-wrapper .badge.bg{
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px;
+    letter-spacing: 0.08em;
+    border-radius: 10px;
+    color: var(--gz-midnight);
+    font-family: var(--jb-font), monospace;
+    background-color: var(--gz-gold);
+}
+.game-banner > .gb-wrapper .title{
+font-size: 60px;
+font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.game-banner > .gb-wrapper p{
+    line-height: 1.5;
+    font-size: 18px;
+    max-width: 500px;
+}
+.badges{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.game-banner > .gb-wrapper .badges .badge{
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px;
+    letter-spacing: 0.08em;
+    border-radius: 10px;
+    color: var(--gz-text);
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid var(--gz-text);
+}
+
+.game-banner .gb-cta{
+
+    flex-shrink: 0;
+
+}
+.game-banner .gb-cta .release-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border:1.5px solid var(--gz-text); */
+    border-radius: 10px;
+    padding: 20px;
+}
+.game-banner .gb-cta .release-info span:first-child{
+     font-family: var(--jb-font), monospace;
+     font-size: 13px;
+     text-transform: uppercase;
+     font-weight: 600;
+}
+.game-banner .gb-cta .release-info span.date{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--gz-gold);
+}
+.game-banner .gb-cta button{
+    /* margin-top: 30px;
+    border: none; */
+  
+    
+    
+   
+    
+    
+    /* transition: all .25s ease-in-out; */
+}
+.game-banner .gb-cta a{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(to bottom, rgba(255,255,255,.4));
+    border: 1px solid var(--gz-text);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--gz-midnight);
+    transition: all .25s ease-in-out;
+}
+.game-banner .gb-cta a:hover{
+    background: linear-gradient(to bottom, rgba(0,0,0,.6));
+    color: var(--gz-gold);
+}
+@media (max-width:768px){
+
+.game-banner > .gb-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.8)) ,url('public/game-banner/gta-6.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+  }
+  .game-banner > .gb-wrapper .gb-content{
+    max-width: 100%;
+   
+  }
+  .game-banner .gb-cta .release-info {
+    padding: 0px;
+    padding-top:30px
+  }
+  .game-banner .gb-cta{
+    width: 100%;
+    
+  }
+
+  /* .game-banner .gb-cta a {
+    display: block;
+    margin: 30px auto 0px auto;
+    text-align: center;
+  } */
+}
+@media (max-width:375px){
+    .game-banner .gb-cta a{
+        font-size: 13px;
+    }
+}
