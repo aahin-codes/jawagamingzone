@@ -52,9 +52,10 @@ footer .wrapper .left .social-cta{
 }
 footer .wrapper .left .social-cta svg{
     padding: 5px;
-    background-color: var(--gz-gold);
+    background-color: var(--gz-text);
     font-size: 30px;
     border-radius: 4px;
+    color: var(--gz-void);
 }
 
 footer .wrapper .middle, footer .wrapper .right{
@@ -89,6 +90,10 @@ footer .copyrights {
     }
     footer .wrapper .left{
         width: 100%;
+    }
+    footer .copyrights{
+        font-size: 12px;
+        padding: 0px 10px 10px;
     }
 }
 
