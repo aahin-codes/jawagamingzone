@@ -67,6 +67,7 @@ header nav .right .sub-menu {
      padding: 10px 20px;
      border-radius: 4px;
      display: none;
+     z-index: 2;
 }
 header nav .right .sub-menu.active {
      display: flex;
@@ -78,10 +79,12 @@ header nav .right ul li a, header nav .right ul li span{
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--gz-text);
+    transition: all .25s ease-in-out;
 }
 
 header nav .right ul li a:hover,header nav .right ul li span:hover{
-    background-color: var(--gz-gold);
+    background-color: var(--gz-edge);
 }
 
 header nav .right .menu-icons{
