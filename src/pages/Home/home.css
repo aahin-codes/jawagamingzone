@@ -119,9 +119,7 @@ section.home>.h-1-wrapper .home-cta a:last-child {
     color: var(--gz-text);
     background-color: transparent;
 }
-section.home>.h-1-wrapper .home-cta a:first-child svg{
-    fill: inherit;
-}
+
 
 section.home>.h-1-wrapper .badges {
     display: flex;
@@ -333,6 +331,7 @@ section.home>.showcase>.wrapper span .dot {
     cursor: pointer;
     text-decoration: none;
     border-radius: 20px;
+    color: var(--gz-text);
 }
 
 .h-3-wrapper .cta a:first-child,
@@ -342,10 +341,7 @@ section.home>.showcase>.wrapper span .dot {
     border-color: transparent;
     
 }
-.h-3-wrapper .cta a:first-child svg,
-.h-5-wrapper .cta a:first-child svg{
-    fill: inherit;
-}
+
 
 .h-5-wrapper {
     padding: 30px;
