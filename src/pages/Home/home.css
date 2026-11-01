@@ -379,7 +379,7 @@ section.home>.showcase>.wrapper span .dot {
 }
 
 
-.console-cards {
+.h-6-pick .console-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -388,7 +388,7 @@ section.home>.showcase>.wrapper span .dot {
     margin-bottom: 50px;
 }
 
-.console-cards>.c-card {
+.h-6-pick .console-cards>.c-card {
     width: calc(100% / 2 - 15px);
     height: 323px;
     padding: 30px;
@@ -402,40 +402,40 @@ section.home>.showcase>.wrapper span .dot {
 
 }
 
-/* .console-cards>.c-card.active{
+/* .h-6-pick .console-cards>.c-card.active{
     background-color: var(--gz-gold);
     border-color: transparent;
 } */
 
-.console-cards>.c-card>img {
+.h-6-pick .console-cards>.c-card>img {
     height: 300px;
     max-width: 200px;
     object-fit: contain;
     /* padding: 10px; */
 }
 
-.console-cards>.c-card.ps-5>img {
+.h-6-pick .console-cards>.c-card.ps-5>img {
     transform: scale(1.5);
 }
 
-.console-cards>.c-card.pxn>img {
+.h-6-pick .console-cards>.c-card.pxn>img {
     transform: scale(1.5);
 }
 
-.console-cards>.c-card>.console-details {
+.h-6-pick .console-cards>.c-card>.console-details {
     /* display: flex;
     align-items: flex-start;
     justify-content: space-between; */
     margin-top: 10px;
 }
 
-.console-cards>.c-card>.console-details>.price {
+.h-6-pick .console-cards>.c-card>.console-details>.price {
     color: var(--gz-text-muted);
     font-size: 14px;
     text-align: center;
 }
 
-.console-cards>.c-card>.console-details>.details span {
+.h-6-pick .console-cards>.c-card>.console-details>.details span {
     position: absolute;
     left: 20px;
     top: 20px;
@@ -448,7 +448,7 @@ section.home>.showcase>.wrapper span .dot {
 
 }
 
-.console-cards>.c-card>.console-details>.details h2 {
+.h-6-pick .console-cards>.c-card>.console-details>.details h2 {
     text-align: center;
     margin-bottom: 5px;
 }
@@ -525,7 +525,7 @@ section.home>.showcase>.wrapper span .dot {
 }
 
 @media (max-width:768px) {
-    .console-cards>.c-card {
+    .h-6-pick .console-cards>.c-card {
         width: 100%;
     }
 
@@ -616,7 +616,7 @@ section.home>.showcase>.wrapper span .dot {
     }
 
 
-    .console-cards>.c-card.pxn>img {
+    .h-6-pick .console-cards>.c-card.pxn>img {
         transform: scale(1.2);
     }
 
