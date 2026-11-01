@@ -23,6 +23,14 @@ header nav .left {
 
 header nav .left img{
     object-fit: contain;
+    background-color: #2B35B8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px  var(--gz-edge), -2px -2px 20px var(--gz-edge);
+    /* box-shadow: ; */
+
+}
+header nav .left .shop-name-wrapper{
+    padding-left:10px
 }
 
 header nav .left .shop-name-wrapper p:first-child {
@@ -126,4 +134,8 @@ header nav .right .menu-icons{
         padding-left: 10px;
         margin-top: 10px;
     }
+}
+@keyframes glow {
+  from { filter: drop-shadow(0 0 4px #61dafb); }
+  to   { filter: drop-shadow(0 0 20px #61dafb); }
 }
