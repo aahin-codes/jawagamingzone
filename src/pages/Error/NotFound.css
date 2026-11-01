@@ -57,6 +57,7 @@
     align-items: center;
     gap: 10px;
     background-color: var(--gz-void);
+    color: var(--gz-text);
 }
 
 @media (max-width:500px) {
