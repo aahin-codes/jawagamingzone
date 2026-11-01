@@ -16,11 +16,12 @@
 .contact>.c-1-wrapper h1 {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 48px;
+     font-size: 168px;
+    font-weight: 800;
     line-height: 1.2;
 }
 .contact>.c-1-wrapper h1 span {
-    color: var(--gz-gold);
+    color: var(--gz-text-accent);
 }
 .contact>.c-1-wrapper > p{
     line-height: 1.5;
@@ -46,7 +47,7 @@
 }
 
 .contact > .c-2-wrapper .left .card > small{
-    color: var(--gz-gold);
+    color: var(--gz-text-accent);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -72,12 +73,13 @@
     
     border: none;
     padding: 10px 16px;
-    border-radius: 4px;
-    border: 1px solid var(--gz-gold);
+    border-radius: 20px;
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: var(--gz-void);
+    background-color: var(--gz-text-accent);
+    color: var(--gz-midnight);
     margin-top: 25px;
     text-transform: uppercase;
     font-weight: 600;
@@ -94,6 +96,14 @@
     margin-bottom: 20px;
     padding-bottom: 3px;
     border-bottom: 1px solid var(--gz-edge);
+}
+.contact > .c-2-wrapper .left .card-3 .d.active{
+    border-bottom: 1px solid var(--gz-gold);
+    font-weight: 600;
+    color: var(--gz-gold);
+}
+.contact > .c-2-wrapper .left .card-3 .d.active span{
+    color: var(--gz-gold);
 }
 .contact > .c-2-wrapper .left .card-3 .d:nth-child(2){
     margin-top: 20px;

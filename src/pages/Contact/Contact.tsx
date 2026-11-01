@@ -4,6 +4,10 @@ import { IoIosCall } from "react-icons/io";
 import { LuClock10 } from "react-icons/lu";
 
 const Contact = () => {
+
+  const date = new Date();
+  const today = date.toLocaleString('en-US', { weekday: 'long' })
+
   return (
     <>
       <section className='contact'>
@@ -28,35 +32,42 @@ const Contact = () => {
             </div>
             <div className="card card-3">
               <small><LuClock10 /> Opening hours</small>
-              <div className="d">
+              <div className={`d ${today === "Monday" ? "active" : ""}`}>
                 <span>Monday</span>
+                {today === "Monday" ? (<span className='today'>Today</span>) : ""}
                 <span>10AM - 10PM</span>
               </div>
-              <div className="d">
+              <div className={`d ${today === "Tuesday" ? "active" : ""}`}>
                 <span>Tuesday</span>
+                {today === "Tuesday" ? (<span className='today'>Today</span>) : ""}
                 <span>10AM - 10PM</span>
               </div>
-              <div className="d">
+              <div className={`d ${today === "Wednesday" ? "active" : ""}`}>
                 <span>Wednesday</span>
+                {today === "Wednesday" ? (<span className='today'>Today</span>) : ""}
                 <span>10AM - 10PM</span>
               </div>
-              <div className="d">
+              <div className={`d ${today === "Thursday" ? "active" : ""}`}>
                 <span>Thursday</span>
+                {today === "Thursday" ? (<span className='today'>Today</span>) : ""}
                 <span>10AM - 10PM</span>
               </div>
-              <div className="d">
+              <div className={`d ${today === "Friday" ? "active" : ""}`}>
                 <span>Friday</span>
+                {today === "Friday" ? (<span className='today'>Today</span>) : ""}
                 <span>10AM - 10PM</span>
               </div>
-              <div className="d">
+              <div className={`d ${today === "Saturday" ? "active" : ""}`}>
                 <span>Saturday</span>
+                {today === "Saturday" ? (<span className='today'>Today</span>) : ""}
                 <span>09AM - 10PM</span>
               </div>
-              <div className="d">
+              <div className={`d ${today === "Sunday" ? "active" : ""}`}>
                 <span>Sunday</span>
-                <span>09AM - 10PM</span>
+                {today === "Sunday" ? (<span className='today'>Today</span>) : ""}
+                <span>09AM - 10PM </span>
               </div>
-              <span>Open today <div className="dot"></div> 10am - 10pm</span>
+              {/* <span>Open today <div className="dot"></div> 10am - 10pm</span> */}
             </div>
           </div>
           <div className="right">
