@@ -51,7 +51,8 @@ const WHATSAPP_BOOKING_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
 
     <section className="home">
         <div className="h-1-wrapper">
-            <small>PLAYSTATION GAMING LOUNGE</small>
+            <div className="h-1-content">
+                <small>PLAYSTATION GAMING LOUNGE</small>
             <h1>
                 <span>Lights down<span className="dot"></span></span>
                  <br />
@@ -60,8 +61,8 @@ const WHATSAPP_BOOKING_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
             <p className='description'>Play PS5, PS4, PS2 and a full racing simulator in a cool,
              air-conditioned lounge. Come solo or bring your squad — book a slot on WhatsApp or just walk in.</p>
             <div className="home-cta">
-                <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer"><FaCheckToSlot/>Book a Slot</a>
-                <Link to={"/contact"}><FaLocationDot/>Find Us</Link>
+                <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer"><FaCheckToSlot className='book-slot-icon'/>Book a Slot</a>
+                <Link to={"/contact"}><FaLocationDot className='find-us-icon'/>Find Us</Link>
             </div>
             <div className="badges">
                 <span>Open daily 10AM – 10PM</span>
@@ -69,6 +70,17 @@ const WHATSAPP_BOOKING_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
                 <span>Free parking</span>
                 <span>4K displays</span>
             </div>
+                </div>
+             <div className="shop-img">
+            <div className="img-wrapper">
+                <img src={shopImg} alt="" />
+
+                {/* <span className="s1">Big screen wall</span>
+                <span className="s2">Lounge</span>
+                <span className="s3">Console Stations</span>
+                <span className="s4">Console Stations</span> */}
+            </div>
+        </div>
 
            
         </div>
@@ -81,16 +93,7 @@ const WHATSAPP_BOOKING_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIC
                 <span>Racing Sim <span className="dot"></span> PXN V99</span>
                </div>
         </div>
-        <div className="shop-img">
-            <div className="img-wrapper">
-                <img src={shopImg} alt="" />
-
-                <span className="s1">Big screen wall</span>
-                <span className="s2">Lounge</span>
-                <span className="s3">Console Stations</span>
-                <span className="s4">Console Stations</span>
-            </div>
-        </div>
+       
         <div className="h-2-wrapper">
             <small>WHY GAMERS CHOOSE US</small>
             <h2>More than just gaming</h2>
