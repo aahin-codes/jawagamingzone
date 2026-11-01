@@ -11,38 +11,38 @@ import { Link } from 'react-router-dom';
 import GameBanner from '../../components/GameBanner/GameBanner';
 
 const Home = () => {
-    const slides = [
-        {
-            id: 1,
-            image: 'https://image.api.playstation.com/vulcan/img/rnd/202011/1204/wYL4v2r8uMQFvVTJlfuj8ICk.png',
-            title: 'PS5',
-            description: 'This is the first slide'
-        },
-        {
-            id: 2,
-            image: 'https://gmedia.playstation.com/is/image/SIEPDC/death-stranding-store-art-01-07oct21$en',
-            title: 'PS5',
-            description: 'This is the second slide'
-        },
-        {
-            id: 3,
-            image: 'https://gmedia.playstation.com/is/image/SIEPDC/Demons-Souls-thumbnail-01-ps4-en-12nov20',
-            title: 'PS5',
-            description: 'This is the third slide'
-        },
-        {
-            id: 4,
-            image: 'https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-tsushima-directors-cut-01-03sep21$en',
-            title: 'PS5',
-            description: 'This is the fourth slide'
-        },
-        {
-            id: 5,
-            image: 'https://image.api.playstation.com/vulcan/ap/rnd/202010/0221/vC7trMorHJgbImp8PCQvpI0p.png',
-            title: 'PS5',
-            description: 'This is the fifth slide'
-        }
-    ]
+    // const slides = [
+    //     {
+    //         id: 1,
+    //         image: 'https://image.api.playstation.com/vulcan/img/rnd/202011/1204/wYL4v2r8uMQFvVTJlfuj8ICk.png',
+    //         title: 'PS5',
+    //         description: 'This is the first slide'
+    //     },
+    //     {
+    //         id: 2,
+    //         image: 'https://gmedia.playstation.com/is/image/SIEPDC/death-stranding-store-art-01-07oct21$en',
+    //         title: 'PS5',
+    //         description: 'This is the second slide'
+    //     },
+    //     {
+    //         id: 3,
+    //         image: 'https://gmedia.playstation.com/is/image/SIEPDC/Demons-Souls-thumbnail-01-ps4-en-12nov20',
+    //         title: 'PS5',
+    //         description: 'This is the third slide'
+    //     },
+    //     {
+    //         id: 4,
+    //         image: 'https://gmedia.playstation.com/is/image/SIEPDC/ghost-of-tsushima-directors-cut-01-03sep21$en',
+    //         title: 'PS5',
+    //         description: 'This is the fourth slide'
+    //     },
+    //     {
+    //         id: 5,
+    //         image: 'https://image.api.playstation.com/vulcan/ap/rnd/202010/0221/vC7trMorHJgbImp8PCQvpI0p.png',
+    //         title: 'PS5',
+    //         description: 'This is the fifth slide'
+    //     }
+    // ]
 
     const WHATSAPP_NUMBER = '916380074107';
     const BOOKING_MESSAGE = 'Hi Jawa Gaming Zone! I would like to book a gaming slot. Please share the available timings.';

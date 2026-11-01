@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import logo from "../../assets/logo.png"
 import './gamesLibrary.css'
 
 const GamesLibrary = () => {
@@ -8,7 +7,7 @@ const GamesLibrary = () => {
 
   const choosingConsole = (console:string) => {
 
-    setChooseConsole((prev) => prev=console)
+    setChooseConsole(console)
   }
 
   const gamesList = [ {
@@ -57,7 +56,7 @@ const GamesLibrary = () => {
 
             <div className="game-cards">
                 {
-                    filteredGames.map((game,index)=>(<div className="g-card" key={game.title + game.console}>
+                    filteredGames.map((game)=>(<div className="g-card" key={game.title + game.console}>
                     <img src={game.thumnail} alt="" />
                     <span className='console'>{game.console}</span>
                     <span className='title'>{game.title}</span>

@@ -1,6 +1,4 @@
 import './NotFound.css';
-import Footer from '../../components/Footer/Footer'
-import Header from '../../components/Header/Header'
 import { FaArrowLeft } from "react-icons/fa";
 
 const NotFound = () => {

@@ -1,6 +1,6 @@
 import './footer.css'
 import logo from '../../assets/logo.png'
-import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa6";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
 
 
